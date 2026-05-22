@@ -1,0 +1,12 @@
+# Ignore everything
+*
+
+# Un-ignore directories (needed to traverse into src/)
+!*/
+
+# Un-ignore .cpp files anywhere
+!*.cpp
+
+# Un-ignore specific files
+!.gitignore
+!README.md
