@@ -28,7 +28,7 @@ int main() {
   std::vector<int> result;
 
   std::set_union(setA.begin(), setA.end(), setB.begin(), setB.end(),
-                 back_inserter(result));
+                 std::back_inserter(result));
   std::cout << "\n并集: ";
   for (int n : result)
     std::cout << n << " ";
@@ -36,7 +36,7 @@ int main() {
 
   result.clear();
   std::set_intersection(setA.begin(), setA.end(), setB.begin(), setB.end(),
-                        back_inserter(result));
+                        std::back_inserter(result));
   std::cout << "\n交集：";
   for (int n : result)
     std::cout << n << " ";
@@ -44,7 +44,7 @@ int main() {
 
   result.clear();
   std::set_difference(setA.begin(), setA.end(), setB.begin(), setB.end(),
-                      back_inserter(result));
+                      std::back_inserter(result));
   std::cout << "\n差集（A-B）：";
   for (int n : result)
     std::cout << n << " ";

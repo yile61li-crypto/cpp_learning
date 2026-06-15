@@ -20,11 +20,11 @@ int main() {
   std::cout << "拼接后：" << text + suffix << std::endl;
 
   std::string upper = text;
-  transform(upper.begin(), upper.end(), upper.begin(), ::toupper);
+  std::transform(upper.begin(), upper.end(), upper.begin(), ::toupper);
   std::cout << "大写：" << upper << std::endl;
 
   std::string lower = text;
-  transform(lower.begin(), lower.end(), lower.begin(), ::tolower);
+  std::transform(lower.begin(), lower.end(), lower.begin(), ::tolower);
   std::cout << "小写：" << lower << std::endl;
 
   std::cout << "逐字符：";
